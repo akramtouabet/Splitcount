@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.upec.androidtemplate20192020.MainActivity">
+    <item
+        android:id="@+id/menu_main_edit_account"
+        android:orderInCategory="100"
+        android:title="@string/EditAccount"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_main_about"
+        android:orderInCategory="100"
+        android:title="@string/About"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_main_logout"
+        android:orderInCategory="100"
+        android:title="@string/logout"
+        app:showAsAction="never" />
+</menu>

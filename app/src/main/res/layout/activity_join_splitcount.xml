@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".JoinSplitcountActivity">
+
+    <TextView
+        android:text="@string/JoinSplitcount"
+        android:textSize="20sp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_join_splitcount_code_til"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/activity_join_splitcount_name_input"
+            android:inputType="text"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/SplitcountCode" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/activity_join_splitcount_join_button"
+        android:layout_marginTop="20dp"
+        android:text="@string/JoinSplitcountBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/activity_join_splitcount_pb_loader"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+

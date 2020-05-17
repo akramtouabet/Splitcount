@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplitcountManagerActivity">
+
+    <TextView
+        android:id="@+id/spcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvList2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/activity_splitcount_manager_bottomactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="end"
+        android:theme="@style/BottomAppBar"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabCradleRoundedCornerRadius="15dp"
+        app:menu="@menu/menu_app_bar"
+        app:hideOnScroll="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/activity_splitcount_manager_add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorAccent"
+        android:src="@drawable/plus_icon"
+        app:layout_anchor="@id/activity_splitcount_manager_bottomactionbar"
+        android:tint="@color/white" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
